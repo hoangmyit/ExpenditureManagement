@@ -1,0 +1,6 @@
+@ExpenditureManagement.Server_HostAddress = http://localhost:5214
+
+GET {{ExpenditureManagement.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

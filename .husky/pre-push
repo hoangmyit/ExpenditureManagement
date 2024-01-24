@@ -24,6 +24,3 @@ dotnet build --no-restore
 
 echo '---------Test server code---------'
 dotnet test --no-restore
-
-echo '---------Build client code---------'
-yarn build

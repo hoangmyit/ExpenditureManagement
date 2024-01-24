@@ -24,3 +24,9 @@ dotnet build --no-restore
 
 echo '---------Test server code---------'
 dotnet test --no-restore
+
+echo '---------Build client code---------'
+cd ./expendituremanagement.client && npm run build
+
+echo '---------Test client code---------'
+npm run test

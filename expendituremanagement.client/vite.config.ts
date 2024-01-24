@@ -11,7 +11,7 @@ const baseFolder =
     : `${process.env.HOME}/.aspnet/https`;
 
 const certificateArg = process.argv.map((arg) => arg.match(/--name=(?<value>.+)/i)).filter(Boolean)[0];
-const certificateName = certificateArg ? certificateArg.groups.value : 'videorepetition.client';
+const certificateName = certificateArg ? certificateArg.groups.value : 'expendituremanagement.client';
 
 if (!certificateName) {
   console.error(

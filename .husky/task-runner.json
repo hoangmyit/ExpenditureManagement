@@ -1,9 +1,9 @@
 {
    "tasks": [
       {
-         "name": "verify-code",
+         "name": "format-csharp-code",
          "command": "dotnet",
-         "args": [ "build" ],
+         "args": [ "format", "--include", "${staged}" ],
          "group": "pre-push",
          "include": ["**/*.cs"]
       }

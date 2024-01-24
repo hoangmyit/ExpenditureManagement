@@ -1,0 +1,11 @@
+{
+   "tasks": [
+      {
+         "name": "verify-code",
+         "command": "dotnet",
+         "args": [ "build" ],
+         "group": "pre-push",
+         "include": ["**/*.cs"]
+      }
+   ]
+}

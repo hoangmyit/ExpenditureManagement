@@ -3,9 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenditureManagement.Server", "ExpenditureManagement.Server\ExpenditureManagement.Server.csproj", "{D470621F-B003-4C87-92AB-E76E75C6B966}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenditureManagement.Server", "ExpenditureManagement.Server\ExpenditureManagement.Server.csproj", "{D470621F-B003-4C87-92AB-E76E75C6B966}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F88922A-AA37-4DEE-9BEC-B027BF578385} = {6F88922A-AA37-4DEE-9BEC-B027BF578385}
+		{F9ADA349-65A9-49BD-9E60-E44AC6DC03F0} = {F9ADA349-65A9-49BD-9E60-E44AC6DC03F0}
+	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "expendituremanagement.client", "expendituremanagement.client\expendituremanagement.client.esproj", "{F3CD3E14-A078-42C5-A8BD-EE3A3742C223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{227DFF35-892B-4349-B928-5A4C09CD44FF}"
+	ProjectSection(SolutionItems) = preProject
+		..\project\testCleanArchitect\.editorconfig = ..\project\testCleanArchitect\.editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EM.Application", "EM.Application\EM.Application.csproj", "{6F88922A-AA37-4DEE-9BEC-B027BF578385}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D603B26D-E534-4A6D-B30F-95BBDD054D23} = {D603B26D-E534-4A6D-B30F-95BBDD054D23}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1F61FB64-5050-464F-84FF-1570BA795F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EM.Domain", "EM.Domain\EM.Domain.csproj", "{D603B26D-E534-4A6D-B30F-95BBDD054D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EM.Infrastructure", "EM.Infrastructure\EM.Infrastructure.csproj", "{F9ADA349-65A9-49BD-9E60-E44AC6DC03F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F88922A-AA37-4DEE-9BEC-B027BF578385} = {6F88922A-AA37-4DEE-9BEC-B027BF578385}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EM.Application.UnitTests", "EM.Application.UnitTests\EM.Application.UnitTests.csproj", "{A7B82B23-A920-41C7-A7EA-8C21508E9BCE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F88922A-AA37-4DEE-9BEC-B027BF578385} = {6F88922A-AA37-4DEE-9BEC-B027BF578385}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +51,28 @@ Global
 		{F3CD3E14-A078-42C5-A8BD-EE3A3742C223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3CD3E14-A078-42C5-A8BD-EE3A3742C223}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3CD3E14-A078-42C5-A8BD-EE3A3742C223}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F88922A-AA37-4DEE-9BEC-B027BF578385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F88922A-AA37-4DEE-9BEC-B027BF578385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F88922A-AA37-4DEE-9BEC-B027BF578385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F88922A-AA37-4DEE-9BEC-B027BF578385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D603B26D-E534-4A6D-B30F-95BBDD054D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D603B26D-E534-4A6D-B30F-95BBDD054D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D603B26D-E534-4A6D-B30F-95BBDD054D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D603B26D-E534-4A6D-B30F-95BBDD054D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9ADA349-65A9-49BD-9E60-E44AC6DC03F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9ADA349-65A9-49BD-9E60-E44AC6DC03F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9ADA349-65A9-49BD-9E60-E44AC6DC03F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9ADA349-65A9-49BD-9E60-E44AC6DC03F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B82B23-A920-41C7-A7EA-8C21508E9BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B82B23-A920-41C7-A7EA-8C21508E9BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B82B23-A920-41C7-A7EA-8C21508E9BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B82B23-A920-41C7-A7EA-8C21508E9BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7B82B23-A920-41C7-A7EA-8C21508E9BCE} = {1F61FB64-5050-464F-84FF-1570BA795F43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF5FA3AF-7B47-45CF-AAC7-C1CF0EFF2D11}
